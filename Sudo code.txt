@@ -1,0 +1,54 @@
+Sudo code
+What do I want to achieve?
+
+
+I want a tax software that can estimate my tax return before using an actual software.
+It should ask for:
+    Filing Status
+    Withholding
+    Tax Year (only 2025 for now)
+    Income
+        W2
+        Interest
+        Capital Gains LT
+        Capital Gains ST
+    Deductions
+        Standard
+        Traditional IRA
+        Charitable Donations (1000/2000)
+        HSA
+    Credits
+        AOTC
+        Child Credits
+
+Landing page
+    Income
+    Deductions
+    Credits
+    Calculate Tax
+Each page:
+    Inputs
+    Back Button (saves)
+Calculate Tax
+    Give full summary
+    Back button
+    Download button?
+
+
+Code Structure:
+
+Taxpayer class (4 dictionaries)
+--Give example values before UI
+
+Function for each tax item
+    Calculate total income
+    Calculate total Deductions
+    Calculate tax
+    Calculate deductions based on tax; as well as refund
+    Compare total tax/refund owed to Withholding ammounts
+
+UI
+
+Display page:
+    calls each function and writes all the answers
+
